@@ -1,0 +1,25 @@
+def likes(names):
+	l = len(names)
+	if l == 0:
+		print("no one likes this")
+	elif l == 1:
+		for i in names:
+			print(i + " likes this post")
+	elif l>1 and l<=3:
+		str1 ="" 
+		for i in names[0:-1]:
+			str1+= i + ", "
+		print(str1 + " and "+str(names[-1])+" likes this post" )
+
+	elif l>3:
+		str1 ="" 
+		for i in names[0:2]:
+			str1+= i + ", "
+		print(str1 + " and "+str(len(names[2: ]))+" others likes this post" )
+
+
+	
+
+
+
+likes(["ritik","pradeep","mohit","alt"])
